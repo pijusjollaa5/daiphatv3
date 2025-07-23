@@ -3,121 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pet World</title>
+  <title>American Daily News</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #fefefe;
-      color: #333;
+      padding: 0;
+      background-color: #f4f4f4;
     }
-
     header {
-      background-color: #ffb74d;
-      padding: 20px;
-      text-align: center;
+      background-color: #222;
       color: white;
+      padding: 20px 40px;
+      text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
     nav {
-      background-color: #ffa726;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
+      background-color: #444;
+      color: white;
+      padding: 10px 40px;
+      text-align: center;
     }
-
     nav a {
       color: white;
-      text-decoration: none;
       margin: 0 15px;
+      text-decoration: none;
       font-weight: bold;
     }
-
     .container {
-      padding: 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 20px;
     }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    .article {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
-    .gallery-item {
-      background-color: #fff3e0;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
+    .article img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
-
-    .gallery-item img {
-      width: 100%;
-      border-radius: 10px;
-      height: 200px;
-      object-fit: cover;
+    .article h2 {
+      margin-top: 0;
     }
-
     footer {
+      background-color: #222;
+      color: white;
       text-align: center;
-      background-color: #ffcc80;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
-      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>🐾 Welcome to Pet World 🐶🐱</h1>
-    <p>Explore the adorable world of furry friends!</p>
+    <h1>American Daily News</h1>
+    <p>Your source for trusted U.S. news and analysis</p>
   </header>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">Dogs</a>
-    <a href="#">Cats</a>
-    <a href="#">Others</a>
-    <a href="#">Contact</a>
+    <a href="#">Politics</a>
+    <a href="#">World</a>
+    <a href="#">Technology</a>
+    <a href="#">Health</a>
   </nav>
 
   <div class="container">
-    <h2>✨ Meet Our Lovely Companions</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="https://placedog.net/500" alt="Cute Dog">
-        <h3>Adorable Puppy</h3>
-        <p>Smart, loyal, and always happy to be around you.</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://placekitten.com/500/300" alt="Cute Cat">
-        <h3>Charming Kitty</h3>
-        <p>Independent yet affectionate, full of personality.</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=500&q=60" alt="Pet Rabbit">
-        <h3>Fluffy Rabbit</h3>
-        <p>Gentle and calm, a perfect cuddle buddy.</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1616928241341-398c937b0404?auto=format&fit=crop&w=500&q=60" alt="Bird">
-        <h3>Singing Bird</h3>
-        <p>Brings music and cheer to your everyday life.</p>
-      </div>
+    <div class="article">
+      <h2>U.S. Election 2024: Key States to Watch</h2>
+      <img src="https://images.unsplash.com/photo-1575320181282-16c6b7420cc6" alt="Election USA">
+      <p>As the 2024 election approaches, battleground states like Pennsylvania, Michigan, and Georgia are becoming crucial to both parties. Analysts expect record voter turnout and close margins.</p>
+    </div>
+
+    <div class="article">
+      <h2>NASA Announces New Moon Mission</h2>
+      <img src="https://images.unsplash.com/photo-1600255987862-0c2f54c40350" alt="NASA Moon Mission">
+      <p>NASA has revealed plans for its next crewed mission to the Moon as part of the Artemis program. The mission is expected to launch in late 2025 and aims to establish a permanent lunar base.</p>
+    </div>
+
+    <div class="article">
+      <h2>American Tech Giants Invest in AI</h2>
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="Artificial Intelligence">
+      <p>Companies like Google, Microsoft, and OpenAI are heavily investing in AI research. The U.S. leads globally in innovation but faces challenges around regulation and ethics.</p>
     </div>
   </div>
 
   <footer>
-    © 2025 Pet World. All rights reserved.
+    <p>&copy; 2025 American Daily News. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
